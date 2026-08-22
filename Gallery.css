@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: "IRANSans", sans-serif;
+  background-image: url(./media/pic/back.jpg);
+}
+
+
+.hero {
+  width: auto;
+  height: 30vh;
+  margin-top: 1rem;
+}
+
+.hero-header {
+  width: auto;
+  height: 30vh;
+  display: block;
+  justify-self: center;
+  object-fit: contain;
+  border: 5px solid #d4af37; 
+  border-radius: 20px;
+}
+
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.poster-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+  .hero{
+	height: 10vh;
+  }		
+  .hero-header {
+	width: 70%;
+    height: 10vh;
+  }
+  .poster-img {
+    width: 90%;
+  }
+}
