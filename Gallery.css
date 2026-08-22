@@ -42,10 +42,10 @@ body {
 	height: 10vh;
   }		
   .hero-header {
-	width: 70%;
     height: 10vh;
   }
   .poster-img {
     width: 90%;
+	height: 68vh;
   }
 }
