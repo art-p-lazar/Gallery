@@ -48,7 +48,6 @@ body {
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
-
 .slide-hint {
   display: block;
   justify-self: center;
@@ -102,7 +101,7 @@ body {
   }
 
   .poster-slider {
-    width: 90%;
+    width: 94%;
     height: 68vh;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
@@ -113,6 +112,6 @@ body {
   }
 
   .slide-hint {
-    width: 90%;
+    width: 94%;
   }
 }
