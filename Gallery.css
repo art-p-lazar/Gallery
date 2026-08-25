@@ -22,23 +22,21 @@ body {
   border-radius: 20px;
 }
 
-/* فاصله بین هدر و اسلایدر */
+
 .poster-slider {
   width: 350px;
   height: 500px;
   position: relative;
   overflow: visible;
-  margin: 0.5rem auto; /* فاصله از هدر + وسط‌چین */
+  margin: 1rem auto; 
   padding-right: 40px;
 }
 
-/* پوستر جلو کمی از بالا بیرون زده */
 .front {
-  transform: translateY(-15px); /* کمترش کردم تا با هدر تداخل نداشته باشه */
+  transform: translateY(-15px);
   z-index: 2;
 }
 
-/* پوستر پشت */
 .back {
   transform: translateY(0);
   z-index: 1;
@@ -53,6 +51,8 @@ body {
 }
 
 .slide-hint {
+  display: block;
+  justify-self: center;
   width: 100%;
   text-align: center;
   font-size: 0.95rem;
@@ -73,7 +73,6 @@ body {
   100% { opacity: 0.5; }
 }
 
-/* موبایل */
 @media (max-width: 768px) {
   .hero {
     height: 12vh;
@@ -86,10 +85,15 @@ body {
   .poster-slider {
     width: 90%;
     height: 68vh;
-    margin-top: 1.5rem; /* فاصله بیشتر برای جلوگیری از تداخل */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .front {
-    transform: translateY(-10px); /* در موبایل کمترش می‌کنیم */
+    transform: translateY(-10px);
+  }
+
+  .slide-hint {
+    width: 90%;
   }
 }
