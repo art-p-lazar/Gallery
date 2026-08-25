@@ -56,7 +56,7 @@ body {
   font-size: 0.95rem;
   color: #d4af37;
   padding: 0.5rem 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.5);
   border-top: 1px solid #a4a215;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -70,23 +70,23 @@ body {
     transform 1.2s ease,
     opacity 1.2s ease;
 
-  animation: hintPulse 5s ease-in-out infinite;
+  animation: hintPulse 4s ease-in-out infinite;
 }
 
 @keyframes hintPulse {
   0% { 
     opacity: 0.75; 
-    background: rgba(20, 34, 83, 0.7); 
+    background: rgba(3, 18, 67, 0.75); 
     color: #c89a05;
   }
   50% { 
     opacity: 1; 
-    background: rgba(0, 0, 0, 0.55); 
+    background: rgba(0, 0, 0, 0.5); 
     color: #d4af37;
   }
   100% { 
     opacity: 0.75; 
-    background: rgba(20, 34, 83, 0.7); 
+    background: rgba(3, 18, 67, 0.75); 
     color: #c89a05;
   }
 }
