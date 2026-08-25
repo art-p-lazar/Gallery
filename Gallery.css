@@ -28,7 +28,7 @@ body {
   height: 500px;
   position: relative;
   overflow: visible;
-  margin: 2rem auto; /* فاصله از هدر + وسط‌چین */
+  margin: 0.5rem auto; /* فاصله از هدر + وسط‌چین */
   padding-right: 40px;
 }
 
