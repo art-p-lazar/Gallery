@@ -50,27 +50,30 @@ body {
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
+
 .slide-hint {
   display: block;
   justify-self: center;
   width: 100%;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: #d4af37;
   padding: 0.5rem 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
   border-top: 1px solid #d4af37;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   backdrop-filter: blur(4px);
-  margin-top: -10px; /* چسباندن به پوستر */
+  margin-top: -10px; 
   user-select: none;
+  animation: hintPulse 4s infinite;
+
 }
 
 @keyframes hintPulse {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
+  0% { opacity: 0.85; background: rgba(20, 34, 83, 0.60); color: #d0a108 }
+  50% { opacity: 1; background: rgba(0, 0, 0, 0.55); color: #d4af37; }
+  100% { opacity: 0.85; background: rgba(20, 34, 83, 0.60); color: #d0a108;}
 }
 
 @media (max-width: 768px) {
