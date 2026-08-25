@@ -55,15 +55,15 @@ body {
 .slide-hint {
   width: 100%;
   text-align: center;
-  font-size: 1rem;
-  color: #d4af37; /* طلایی */
-  margin-top: 1rem;
-  padding: 0.6rem 0;
-  background: rgba(0, 0, 0, 0.55); /* مشکی ملایم */
-  border-top: 1px solid #d4af37; /* خط طلایی */
-  border-bottom: 1px solid #d4af37;
-  border-radius: 10px;
-  backdrop-filter: blur(4px); /* خیلی شیک */
+  font-size: 0.95rem;
+  color: #d4af37;
+  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-top: 1px solid #d4af37;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  backdrop-filter: blur(4px);
+  margin-top: -10px; /* چسباندن به پوستر */
   user-select: none;
 }
 
