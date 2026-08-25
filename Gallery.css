@@ -4,48 +4,92 @@ body {
   background-image: url(./media/pic/back.jpg);
 }
 
-
+/* هدر */
 .hero {
-  width: auto;
+  width: 100%;
   height: 30vh;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-header {
   width: auto;
-  height: 30vh;
-  display: block;
-  justify-self: center;
+  height: 100%;
   object-fit: contain;
-  border: 5px solid #d4af37; 
+  border: 5px solid #d4af37;
   border-radius: 20px;
 }
 
-
-.poster {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
+/* فاصله بین هدر و اسلایدر */
+.poster-slider {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  overflow: visible;
+  margin: 2rem auto; /* فاصله از هدر + وسط‌چین */
+  padding-right: 40px;
 }
 
-.poster-img {
+/* پوستر جلو کمی از بالا بیرون زده */
+.front {
+  transform: translateY(-15px); /* کمترش کردم تا با هدر تداخل نداشته باشه */
+  z-index: 2;
+}
+
+/* پوستر پشت */
+.back {
+  transform: translateY(0);
+  z-index: 1;
+}
+
+.poster-slider img {
   width: 100%;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
+.slide-hint {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #d4af37; /* طلایی */
+  margin-top: 1rem;
+  padding: 0.6rem 0;
+  background: rgba(0, 0, 0, 0.55); /* مشکی ملایم */
+  border-top: 1px solid #d4af37; /* خط طلایی */
+  border-bottom: 1px solid #d4af37;
+  border-radius: 10px;
+  backdrop-filter: blur(4px); /* خیلی شیک */
+  user-select: none;
+}
 
+@keyframes hintPulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* موبایل */
 @media (max-width: 768px) {
-  .hero{
-	height: 10vh;
-  }		
-  .hero-header {
-    height: 10vh;
+  .hero {
+    height: 12vh;
   }
-  .poster-img {
+
+  .hero-header {
+    height: 12vh;
+  }
+
+  .poster-slider {
     width: 90%;
-	height: 68vh;
+    height: 68vh;
+    margin-top: 1.5rem; /* فاصله بیشتر برای جلوگیری از تداخل */
+  }
+
+  .front {
+    transform: translateY(-10px); /* در موبایل کمترش می‌کنیم */
   }
 }

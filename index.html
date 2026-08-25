@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نمایشگاه</title>
-    <link rel="stylesheet" href="./Gallery.css">
-</head>
-<body>
-    <section class="hero">
-        <img class="hero-header" src="./media/pic/HEAD4.jpg" alt="Pooneh Lazar Art Gallery">
-    </section>
-    
-    <section class="poster">
-        <img class="poster-img" src="./media/pic/sss.jpg" alt="Painting Exhibition">
-    </section>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>نمایشگاه</title>
+        <link rel="stylesheet" href="./Gallery.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section class="hero">
+            <img class="hero-header" src="./media/pic/HEAD4.jpg" alt="Pooneh Lazar Art Gallery">
+        </section>
+        
+        <div class="poster-slider swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide front">
+                    <img src="./media/pic/sss.jpg" alt="Front Poster">
+                </div>
+                
+                <div class="swiper-slide back">
+                    <img src="./media/pic/backp.jpg" alt="Back Poster">
+                </div>
+                
+            </div>
+        </div>
 
+        <footer class="slide-hint">
+            ←  اسلاید →
+        </footer>
+       
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <script>
+            const swiper = new Swiper('.poster-slider', {
+                direction: 'horizontal',
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                effect: 'slide',
+                speed: 450,});
+        </script>
+
+    </body>
+</html>
+    
